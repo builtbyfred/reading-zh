@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "reading-zh",
+  "compatibility_date": "2026-11-03",
+  "assets": {
+    // VitePress `cleanUrls` writes articles as `page.html` (in-site links omit
+    // the trailing slash) and section homes as `section/index.html` (links keep
+    // it). `auto-trailing-slash` matches that mix. The build also emits root
+    // `404.html`.
+    "directory": "./docs/.vitepress/dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
