@@ -43,7 +43,7 @@ npm run dev
 | `npm run build` | 构建静态站点。`npm run docs:build` 与它相同 |
 | `npm run preview` | 预览构建结果。`npm run docs:preview` 与它相同 |
 
-当前 AI / Agent 书单里的文章是「待译」占位：有中文导读和原文链接，完整译文尚未写。
+当前 AI / Agent 书单里，Anthropic 的 25 篇和 Pi 的两篇是完整译文，第九节社区与产业精选是摘要。
 
 ## 部署
 

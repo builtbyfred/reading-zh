@@ -115,6 +115,13 @@ tags:
 | JIT | JIT（即时加载，just-in-time）。用到时再放进上下文 |
 | loop engineering | loop engineering（循环工程）。设计会自己去发现工作、调用 Agent、把进度写在对话外的那一层 |
 | worktree | worktree（隔离工作区）。同一 Git 仓库上的另一份工作目录，用来让并行改动互不覆盖 |
+| Pi | Pi。Mario Zechner 的极简编码 Agent harness。首次出现写「Pi（有主见的极简 coding agent）」 |
+| YOLO mode | YOLO mode（默认不拦权限）。编码 Agent 直接读写和执行，不弹确认 |
+| context handoff | context handoff（跨提供方交接上下文）。会话中途换模型时，把已有消息转成对方能接着读的形式 |
+| differential rendering | differential rendering（差分渲染）。终端界面只重画和上一帧不同的行 |
+| retained mode | retained mode（保留模式）。组件树跨帧保留，没变的部分可以缓存。与 immediate mode（立即模式）相对 |
+| plan mode | plan mode（计划模式）。先只读分析、再改代码的一种模式 |
+| Terminal-Bench | Terminal-Bench。在终端里做任务的 Agent 评测 |
 
 表里没有的词，选一个写法用在文里，并在 Pull Request 里补一行到这张表。
 
