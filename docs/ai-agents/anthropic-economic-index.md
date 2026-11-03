@@ -16,7 +16,7 @@ tags:
 
 ## 导读
 
-这篇是 Anthropic 经济指数的第一份报告，样本是 Claude.ai 免费版和 Pro 上大约一百万次匿名对话。它不靠问卷、也不做预测，而是把对话对到美国劳工部 O*NET 的职业 task（任务）上，看 AI 现在落在哪些任务。正文把用法分成 augmentation（增强）和 automation（自动化），并给出职业内部的覆盖深度和与薪资的关系。原文发表于 2025 年 2 月 10 日。完整论文见 [arXiv:2503.04761](http://arxiv.org/abs/2503.04761)。
+这篇是 Anthropic 经济指数的第一份报告，用 Claude.ai 免费版和 Pro 上大约一百万次匿名对话，把用法对到美国劳工部 O*NET 的职业 task（任务）上。正文区分 augmentation（增强）和 automation（自动化），并给出职业内部的覆盖深度和与薪资的关系。原文发表于 2025 年 2 月 10 日，完整论文见 [arXiv:2503.04761](http://arxiv.org/abs/2503.04761)。
 
 ## 译文
 

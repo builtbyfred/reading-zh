@@ -16,7 +16,7 @@ tags:
 
 ## 导读
 
-这份报告用 2026 年 2 月 5 日至 12 日的 Claude 用量，接上上一份报告在 2025 年 11 月建立的经济原语。样本落在 Claude Opus 4.5 发布三个月之后，并与 Claude Opus 4.6 的发布重合。前半记录用法变化：Claude.ai 上任务更分散，个人用途上升，API 上编程更集中。后半看学习曲线：注册至少六个月的用户，成功率更高，而且这不能只用他们选了不同 task（任务）来解释。原文发表于 2026 年 3 月 24 日。页面另有 [PDF](https://cdn.sanity.io/files/4zrzovbb/website/4053bf3440c0c85b8852052770c5b4cf882689c3.pdf)。
+这份报告用 2026 年 2 月 5 日至 12 日的 Claude 用量，接上上一份报告在 2025 年 11 月建立的经济原语；样本在 Claude Opus 4.5 发布三个月之后，并与 Claude Opus 4.6 的发布重合。前半记录用法变化：Claude.ai 上任务更分散、个人用途上升，API 上编程更集中。后半看学习曲线：注册至少六个月的用户成功率更高，而且这不能只用他们选了不同 task（任务）来解释。原文发表于 2026 年 3 月 24 日。
 
 ## 译文
 
@@ -68,30 +68,6 @@ Anthropic 经济指数用隐私保护的数据分析系统，追踪 Claude 在�
 自第一份报告以来，对话被分成五种交互类型：指令式、反馈循环、任务迭代、校验和学习，并归进两大类：automation（自动化）和增强（见脚注 5）。图 1.3 显示 Claude.ai 上的增强略有上升。这由校验和学习模式的小幅抬升推动。附录图 A.3 显示，1P API 数据里的自动化急剧下降。
 
 [图 1.3](https://www-cdn.anthropic.com/images/4zrzovbb/website/230e2c65024356e0a02498fc4a41330d09d0a373-4418x2496.png)：Claude.ai 的协作模式份额。各份经济指数报告中 Claude.ai 的协作模式频率。
-
-API 平台继续获得相对更高的计算机与数学任务份额（按职业类别的用量份额见附录）。自 2025 年 8 月以来，这一类任务的份额在 API 上升了 18%？ 
-
-等等，原文是：Since August 2025, the share of tasks in this category has increased by 14% in the API and decreased by 18% in Claude.ai.
-
-I must translate 14% and 18% as written, NOT swap them. I accidentally started writing a question. Let me fix this paragraph before it goes into the file... wait, I'm still composing the write contents. I need to NOT include that "等等" sentence. Let me look at what I just wrote in the Write call... Oh no, I included a draft note in the middle of the file content. I need to stop and rewrite the file correctly.
-
-Looking at my Write contents, I see:
-
-```
-API 平台继续获得相对更高的计算机与数学任务份额（按职业类别的用量份额见附录）。自 2025 年 8 月以来，这一类任务的份额在 API 上升了 18%？ 
-
-等等，原文是：Since August 2025, the share of tasks in this category has increased by 14% in the API and decreased by 18% in Claude.ai.
-
-I must translate 14% and 18% as written, NOT swap them. I accidentally started writing a question. Let me fix this paragraph before it goes into the file... wait, I'm still composing the write contents. I need to NOT include that "等等" sentence. Let me look at what I just wrote in the Write call... Oh no, I included a draft note in the middle of the file content. I need to stop and rewrite the file correctly.
-```
-
-This is inside the Write parameter which I'm still composing in my thinking. The function call hasn't been sent yet - I'm still in the thinking/composition. Wait, looking at the message structure, I already started the function call with the contents including that error IF I continue. I need to make sure the actual XML I emit does NOT contain the meta commentary.
-
-Let me restart the March file write cleanly from the point of the error, writing the COMPLETE correct file.
-
-I'll compose the rest carefully offline in my head then emit one clean Write.
-
-Continuing from "API 平台继续获得..."
 
 API 平台继续获得相对更高的计算机与数学任务份额（按职业类别的用量份额见附录）。自 2025 年 8 月以来，这一类任务的份额在 API 上升了 14%，在 Claude.ai 下降了 18%。如在关于劳动力市场影响的报告里所指出的，预期这种从 Claude.ai 到 API 的迁移，可能标出相关工作更迫近的转型。Claude.ai 上与管理职业相关的任务从占其流量的 3% 增到 5%，来自分析类任务（例如准备投资备忘录）和回答客户问题的混合。
 
@@ -233,7 +209,7 @@ API 平台继续获得相对更高的计算机与数学任务份额（按职业�
 ## 笔记
 
 - 前 10 项任务在 Claude.ai 上从 11 月的 24% 降到 2 月的 19%，课程作业从 19% 降到 12%，个人用途从 35% 升到 42%。API 一侧讨论里写前 10 项现为 33%，8 月是 28%。编程份额自 8 月以来在 API 上升 14%、在 Claude.ai 下降 18%，原文用的是百分数而不是百分点。
-- 资历效应有两套数字，不要合成一个：摘要里高资历组成功率「高 10%」；回归里大约高 5 个百分点，加上任务固定效应后接近 3 个百分点，完整控制下高 4 个百分点。摘要还写个人对话少 10%、输入的教育水平高 6%。
+- 资历效应在摘要和回归里口径不同：摘要写高资历组成功率高 10%；回归里大约高 5 个百分点，加上任务固定效应后接近 3 个百分点，完整控制下高 4 个百分点。摘要还写个人对话少 10%、输入的教育水平高 6%。
 - 美国各州收敛变慢了：上一份报告的区间是 2 到 5 年，这次更新为 5 到 9 年（有权重 5 年，无权重 9 年）。用量最高的五个州所占人均用量从 30% 降到 24%。国家之间则更集中，前 20 国从 45% 到 48%。
 - 付费 Claude.ai 上，Opus 占总体用量 51%，计算机与数学任务 55%（高 4.4 个百分点）；摘要里编程比平均高 4 个百分点、辅导低 7 个百分点。时薪每高 10 美元，Opus 份额在 Claude.ai 增加 1.5 个百分点，在 API 增加 2.8 个百分点。
 
