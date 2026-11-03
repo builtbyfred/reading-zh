@@ -1,19 +1,19 @@
 ---
 title: AI / Agent 阅读清单
-description: Anthropic 工程与研究文章的中文导读目录。每篇链接官方原文，站内不转载英文全文。
+description: AI / Agent 中文导读目录。前七节链到 Anthropic，第九节是社区与产业来源的摘要。站内不转载原文全文。
 outline: [2, 2]
 ---
 
 # AI / Agent 阅读清单
 
-面向希望看懂 AI、也看懂 Agent 的软件开发者。材料来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。
+面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第九节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
 
-本站每篇是 **非官方译文**：有中文导读和按原文结构写成的译文，英文原文请走官方链接。这里不转载英文全文。
+本站每篇是 **非官方** 中文。前七节有导读和按原文结构写成的译文；第九节是摘要。第三方原文留在来源站点，这里不转载全文。
 
 入口：[Engineering](https://www.anthropic.com/engineering) · [Research](https://www.anthropic.com/research) · [Docs](https://docs.anthropic.com)
 
 ::: info 关于原文
-「原文」链到 Anthropic。本站页面是我们的中文导读、摘要或译文。
+前七节的「原文」链到 Anthropic。第九节链到各篇来源页。本站页面是中文导读、摘要或译文。
 :::
 
 ## 推荐阅读节奏 {#pace}
@@ -23,7 +23,7 @@ outline: [2, 2]
 3. **第 3 周**：[拆解 AI Agent 评测](./demystifying-evals-for-ai-agents)、[上下文检索](./contextual-retrieval)、[宪法式 AI](./constitutional-ai)
 4. **之后**：多 Agent、托管 Agent、经济指数，按兴趣补
 
-时间若只够在核心必读之外再加 3 篇，就加第 3 周那三篇。
+时间若只够在核心必读之外再加 3 篇，就加第 3 周那三篇。社区与产业精选不在这条节奏里，想看别人怎么做 harness、MCP 网关和编码 Agent 时再翻[第九节](#community)。
 
 ## 一、核心必读 {#core}
 
@@ -217,6 +217,58 @@ outline: [2, 2]
 
 具体路径以文档侧栏为准，版本会迭代。
 
+## 九、社区与产业精选 {#community}
+
+这一节不是 Anthropic 官方清单。每篇是导读加摘要，原文留在作者或公司的页面上。顺序按收进本站的先后。
+
+### 循环工程：让系统去提示 Agent
+
+- **本站**：[循环工程：让系统去提示 Agent](./loop-engineering)（摘要）
+- **原文**：[Loop Engineering](https://addyosmani.com/blog/loop-engineering/)（Addy Osmani · 2026-06-07）
+- **为什么读**：循环工程在单次 harness 上面一层。五件套（定时自动化、worktree、Skill、插件与 MCP、子 Agent）加上写在磁盘上的状态，Codex 和 Claude Code 能对上同一形状。文末把验证、理解债和认知投降留在人这边。
+
+### 设计 MCP Gateway：Uber 的 MCP 管理平台
+
+- **本站**：[设计 MCP Gateway：Uber 的 MCP 管理平台](./uber-mcp-gateway)（摘要）
+- **原文**：[Designing MCP Gateway](https://www.uber.com/us/en/blog/designing-mcp-gateway/)（Uber Engineering · 2026-10-01）
+- **为什么读**：控制面是 Registry，数据面是把 HTTP、gRPC、TChannel 译成 MCP 的 Proxy。AutoCrawler 从 IDL 爬工具，默认关闭，由服务拥有者打开。规模是他们写的 800+ 服务器、5000+ 工具，后面用渐进发现和 Code Mode 对付上下文膨胀。
+
+### 编码 Agent 的 Harness 工程
+
+- **本站**：[编码 Agent 的 Harness 工程](./harness-engineering-paper)（摘要）
+- **原文**：[Harness Engineering](https://arxiv.org/abs/2609.00006)（Barbaste 等 · arXiv · 2026-07-15）
+- **为什么读**：对十一套编码 harness 做源码解剖，不打分。七个子系统、两处共同缺失（运行时里没有通用 Agent 框架，代码检索不用向量嵌入），以及 2026 年上半年从工具转到平台。笔记里分开链了 OpenAI 那篇同名实践博文，两篇不是同一篇。
+
+### 工程师要解的下一组问题
+
+- **本站**：[工程师要解的下一组问题](./multiagent-new-problems)（摘要）
+- **原文**：[The new set of problems for engineers to solve](https://x.com/i/article/2114537761030230016)（Katelyn Lesse · X Article · 2026-10-26）
+- **为什么读**：个人文章，不是 Anthropic 工程博客。大规模、持久的多 Agent 把问题推到突发负载、Agent 身份与授权、沙箱隔离，以及能停住整个系统的监控和熔断。
+
+### 超智能时代的模型内部人风险
+
+- **本站**：[超智能时代的模型内部人风险](./models-as-insider-risks)（摘要）
+- **原文**：[Models as Insider Risks in the Super Intelligence Era](https://x.com/i/article/2108928845969780736)（Satya Nadella · X Article · 2026-10-10）
+- **为什么读**：个人文章。把前沿模型当内部人来容纳：智能的供给和对其的授权分开，控制放在模型和 harness 外面。七条原则从模型多样、可观察，写到独立审计、熔断和事件披露。
+
+### HiTw93「你不知道的」系列导读
+
+- **本站**：[HiTw93「你不知道的」系列导读](./hitw93-ai-interview-series)（摘要）
+- **原文**：[系列汇总帖](https://x.com/HiTw93/status/2067851910464565374)（HiTw93 · 2026-06-19）
+- **为什么读**：六篇 X 长文的索引：Claude Code、Agent、大模型训练、给非技术人的 AI Coding、GEO、具身智能。本站每篇只写为什么读和章节地图，全文留在 X。
+
+### 一个用寓言讲概念的提示
+
+- **本站**：[一个用寓言讲概念的提示](./anthropic-god-prompt)（摘要）
+- **原文**：[一个神级 Prompt，来自 Anthropic 的一位大神分享！](https://x.com/i/article/2068328394866274305)（檀奕 · X Article · 2026-06-21）
+- **为什么读**：第三方笔记。先讲寓言、结尾再揭示概念，用来记住抽象定义。标题称来自 Anthropic，正文没有给出官方出处，不要把它当成 Anthropic 的工程文。提示词全文不转贴。
+
+### 我怎么用 AI 编程 2026.08
+
+- **本站**：[我怎么用 AI 编程 2026.08](./how-i-use-ai-coding-2026-08)（摘要）
+- **原文**：[我怎么用 AI 编程 2026.08](https://x.com/i/article/2092608649403252736)（陈成 · X Article · 2026-08-26）
+- **为什么读**：两个月的变化收成「并发」：设计一次问 n 个 Agent，审查并行跑 n 个模型，项目在 Herdr 里排开，早晨从读定时 Skill 留下的 issue 开始。
+
 ## 纯链接清单 {#links}
 
 方便复制。阅读请走上面的分栏，那里有导读。
@@ -254,4 +306,18 @@ https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview
 https://docs.anthropic.com/en/docs/agents-and-tools/mcp
 https://docs.anthropic.com/en/docs/build-with-claude/skills-guide
+```
+
+社区与产业原文。阅读走上面的第九节。
+
+```text
+https://addyosmani.com/blog/loop-engineering/
+https://www.uber.com/us/en/blog/designing-mcp-gateway/
+https://arxiv.org/abs/2609.00006
+https://openai.com/index/harness-engineering/
+https://x.com/i/article/2114537761030230016
+https://x.com/i/article/2108928845969780736
+https://x.com/HiTw93/status/2067851910464565374
+https://x.com/i/article/2068328394866274305
+https://x.com/i/article/2092608649403252736
 ```

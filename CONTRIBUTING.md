@@ -113,6 +113,8 @@ tags:
 | RLAIF | RLAIF（用 AI 反馈做的强化学习） |
 | prompt caching | 提示缓存 |
 | JIT | JIT（即时加载，just-in-time）。用到时再放进上下文 |
+| loop engineering | loop engineering（循环工程）。设计会自己去发现工作、调用 Agent、把进度写在对话外的那一层 |
+| worktree | worktree（隔离工作区）。同一 Git 仓库上的另一份工作目录，用来让并行改动互不覆盖 |
 
 表里没有的词，选一个写法用在文里，并在 Pull Request 里补一行到这张表。
 
