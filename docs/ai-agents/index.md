@@ -1,19 +1,19 @@
 ---
 title: AI / Agent 阅读清单
-description: AI / Agent 中文导读目录。前七节链到 Anthropic，第八节是社区与产业来源的摘要。站内不转载原文全文。
+description: AI / Agent 中文导读目录。前七节链到 Anthropic，第九节是社区与产业来源的摘要。站内不转载原文全文。
 outline: [2, 2]
 ---
 
 # AI / Agent 阅读清单
 
-面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第八节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
+面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第九节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
 
-本站每篇是 **非官方** 中文。前七节有导读和按原文结构写成的译文；第八节是摘要。第三方原文留在来源站点，这里不转载全文。
+本站每篇是 **非官方** 中文。前七节有导读和按原文结构写成的译文；第九节是摘要。第三方原文留在来源站点，这里不转载全文。
 
 入口：[Engineering](https://www.anthropic.com/engineering) · [Research](https://www.anthropic.com/research) · [Docs](https://docs.anthropic.com)
 
 ::: info 关于原文
-前七节的「原文」链到 Anthropic。第八节链到各篇来源页。本站页面是中文导读、摘要或译文。
+前七节的「原文」链到 Anthropic。第九节链到各篇来源页。本站页面是中文导读、摘要或译文。
 :::
 
 ## 推荐阅读节奏 {#pace}
@@ -23,7 +23,7 @@ outline: [2, 2]
 3. **第 3 周**：[拆解 AI Agent 评测](./demystifying-evals-for-ai-agents)、[上下文检索](./contextual-retrieval)、[宪法式 AI](./constitutional-ai)
 4. **之后**：多 Agent、托管 Agent、经济指数，按兴趣补
 
-时间若只够在核心必读之外再加 3 篇，就加第 3 周那三篇。社区与产业精选不在这条节奏里，想看别人怎么做 harness、MCP 网关和编码 Agent 时再翻[第八节](#community)。
+时间若只够在核心必读之外再加 3 篇，就加第 3 周那三篇。社区与产业精选不在这条节奏里，想看别人怎么做 harness、MCP 网关和编码 Agent 时再翻[第九节](#community)。
 
 ## 一、核心必读 {#core}
 
@@ -217,7 +217,7 @@ outline: [2, 2]
 
 具体路径以文档侧栏为准，版本会迭代。
 
-## 八、社区与产业精选 {#community}
+## 九、社区与产业精选 {#community}
 
 这一节不是 Anthropic 官方清单。每篇是导读加摘要，原文留在作者或公司的页面上。顺序按收进本站的先后。
 
@@ -308,7 +308,7 @@ https://docs.anthropic.com/en/docs/agents-and-tools/mcp
 https://docs.anthropic.com/en/docs/build-with-claude/skills-guide
 ```
 
-社区与产业原文。阅读走上面的第八节。
+社区与产业原文。阅读走上面的第九节。
 
 ```text
 https://addyosmani.com/blog/loop-engineering/
