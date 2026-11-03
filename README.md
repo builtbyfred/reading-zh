@@ -48,14 +48,20 @@ npm run dev
 ## 部署
 
 构建命令：`npm run build`  
-输出目录：`docs/.vitepress/dist`
+输出目录：`docs/.vitepress/dist`（写在 `wrangler.jsonc` 的 `assets.directory`）
 
-### Cloudflare Pages
+### Cloudflare Workers Builds
 
-- 构建命令：`npm run build`
-- 输出目录：`docs/.vitepress/dist`
-- Node.js：22（18 及以上即可）
-- 挂在域名根路径时，保持 `docs/.vitepress/config.ts` 里的 `base: '/'`
+在 **Workers & Pages** 连接本仓库。Worker 名称用 `reading-zh`，须与 `wrangler.jsonc` 的 `name` 一致。
+
+| 设置 | 值 |
+| --- | --- |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy`（或 `npm exec wrangler deploy`） |
+| Build output directory | 不填。路径在 `wrangler.jsonc` |
+| Node.js | 22（本仓库的 Wrangler 4 要求 Node 22+） |
+
+挂在域名根路径时，保持 `docs/.vitepress/config.ts` 里的 `base: '/'`。
 
 ### GitHub Pages
 
