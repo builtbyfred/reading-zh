@@ -67,6 +67,20 @@ export const aiAgentsSidebar: DefaultTheme.SidebarItem[] = [
           { text: 'Clio：隐私保护下的用法分析', link: '/ai-agents/clio' },
         ],
       },
+      {
+        text: '社区与产业精选',
+        collapsed: true,
+        items: [
+          { text: '循环工程：让系统去提示 Agent', link: '/ai-agents/loop-engineering' },
+          { text: '设计 MCP Gateway', link: '/ai-agents/uber-mcp-gateway' },
+          { text: '编码 Agent 的 Harness 工程', link: '/ai-agents/harness-engineering-paper' },
+          { text: '工程师要解的下一组问题', link: '/ai-agents/multiagent-new-problems' },
+          { text: '模型作为内部人风险', link: '/ai-agents/models-as-insider-risks' },
+          { text: 'HiTw93「你不知道的」系列', link: '/ai-agents/hitw93-ai-interview-series' },
+          { text: '一个用寓言讲概念的提示', link: '/ai-agents/anthropic-god-prompt' },
+          { text: '我怎么用 AI 编程 2026.08', link: '/ai-agents/how-i-use-ai-coding-2026-08' },
+        ],
+      },
     ],
   },
 ]
