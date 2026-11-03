@@ -40,7 +40,7 @@ features:
 
 ## 现在有哪些栏目
 
-- [AI / Agent](/ai-agents/)：已放入一份 Anthropic 阅读清单。25 篇都是「待译」占位，先有中文导读和原文链接。
+- [AI / Agent](/ai-agents/)：已放入一份 Anthropic 阅读清单，25 篇都是译文。另有两篇 Pi coding agent 的译文，以及第九节社区与产业精选（摘要）。
 - [自身成长](/growth/)：栏目已留好，等第一篇真正要译的文章。
 - [短摘录 / 笔记](/notes/)：给更短的卡片，不要求整篇译文。
 

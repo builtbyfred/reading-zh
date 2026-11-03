@@ -42,6 +42,14 @@ export const aiAgentsSidebar: DefaultTheme.SidebarItem[] = [
         ],
       },
       {
+        text: '开源 Harness：Pi',
+        collapsed: false,
+        items: [
+          { text: '做一个有主见的极简编码 Agent', link: '/ai-agents/what-i-learned-building-pi-coding-agent' },
+          { text: 'Claude Code 与 Pi Agent 功能对照', link: '/ai-agents/pi-vs-claude-code' },
+        ],
+      },
+      {
         text: '检索与 Computer Use',
         collapsed: true,
         items: [

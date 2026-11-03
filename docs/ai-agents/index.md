@@ -1,19 +1,19 @@
 ---
 title: AI / Agent 阅读清单
-description: AI / Agent 中文导读目录。前七节链到 Anthropic，第九节是社区与产业来源的摘要。站内不转载原文全文。
+description: AI / Agent 中文导读目录。前七节链到 Anthropic，第八节是 Pi 的两篇译文，第九节是社区与产业来源的摘要。站内不转载原文全文。
 outline: [2, 2]
 ---
 
 # AI / Agent 阅读清单
 
-面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第九节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
+面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第八节是 Pi 的作者长文和一篇社区对照，用来和 Claude Code 这条线对看。第九节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
 
-本站每篇是 **非官方** 中文。前七节有导读和按原文结构写成的译文；第九节是摘要。第三方原文留在来源站点，这里不转载全文。
+本站每篇是 **非官方** 中文。前七节和第八节的两篇 Pi 有导读和按原文结构写成的译文；第九节是摘要。第三方原文留在来源站点，这里不转载全文。
 
 入口：[Engineering](https://www.anthropic.com/engineering) · [Research](https://www.anthropic.com/research) · [Docs](https://docs.anthropic.com)
 
 ::: info 关于原文
-前七节的「原文」链到 Anthropic。第九节链到各篇来源页。本站页面是中文导读、摘要或译文。
+前七节的「原文」链到 Anthropic。第八节链到作者博客或社区仓库。第九节链到各篇来源页。本站页面是中文导读、摘要或译文。
 :::
 
 ## 推荐阅读节奏 {#pace}
@@ -21,7 +21,7 @@ outline: [2, 2]
 1. **第 1 周**：核心必读 1–4（Agent 是什么、上下文、MCP、怎么写工具）
 2. **第 2 周**：核心必读 5–8（用代码调工具、Skills、Agent SDK、Claude Code）
 3. **第 3 周**：[拆解 AI Agent 评测](./demystifying-evals-for-ai-agents)、[上下文检索](./contextual-retrieval)、[宪法式 AI](./constitutional-ai)
-4. **之后**：多 Agent、托管 Agent、经济指数，按兴趣补
+4. **之后**：多 Agent、托管 Agent、经济指数，按兴趣补。想对照开源极简 harness，读[第八节](#pi)。
 
 时间若只够在核心必读之外再加 3 篇，就加第 3 周那三篇。社区与产业精选不在这条节奏里，想看别人怎么做 harness、MCP 网关和编码 Agent 时再翻[第九节](#community)。
 
@@ -217,6 +217,22 @@ outline: [2, 2]
 
 具体路径以文档侧栏为准，版本会迭代。
 
+## 八、开源 Harness 对照：Pi {#pi}
+
+读完 [Claude Code 最佳实践](./claude-code-best-practices) 和 [长时运行应用的 Harness 设计](./harness-design-long-running-apps) 之后再看。一边是 Claude Code 把计划、权限和子任务收进 harness，一边是 Pi 把状态放到文件、bash 和 tmux 里。产品页、演讲、仓库和二次摘要不单建页，链在作者长文的笔记里。
+
+### 做一个有主见的极简编码 Agent，我学到了什么
+
+- **本站**：[做一个有主见的极简编码 Agent，我学到了什么](./what-i-learned-building-pi-coding-agent)（译文）
+- **原文**：[What I learned building an opinionated and minimal coding agent](https://mariozechner.at/posts/2025-11-30-pi-coding-agent/)（Mario Zechner · 2025-11-30）
+- **为什么读**：作者自己解释极简系统提示、四个工具和默认不拦权限，以及为什么他认为现有 harness 做不了上下文工程。用来对照核心清单里的上下文工程和 Claude Code。
+
+### Claude Code 与 Pi Agent 功能对照
+
+- **本站**：[Claude Code 与 Pi Agent 功能对照](./pi-vs-claude-code)（译文）
+- **原文**：[Claude Code vs Pi Agent — Feature Comparison](https://github.com/disler/pi-vs-claude-code/blob/main/COMPARISON.md)（disler/pi-vs-claude-code · Pi v0.52.10，2026 年 2 月）
+- **为什么读**：社区逐项对照，不是官方文档。长文讲为什么砍功能，这张表讲后来的版本上两边各有什么。读的时候以表头的版本为准。
+
 ## 九、社区与产业精选 {#community}
 
 这一节不是 Anthropic 官方清单。每篇是导读加摘要，原文留在作者或公司的页面上。顺序按收进本站的先后。
@@ -269,6 +285,7 @@ outline: [2, 2]
 - **原文**：[我怎么用 AI 编程 2026.08](https://x.com/i/article/2092608649403252736)（陈成 · X Article · 2026-08-26）
 - **为什么读**：两个月的变化收成「并发」：设计一次问 n 个 Agent，审查并行跑 n 个模型，项目在 Herdr 里排开，早晨从读定时 Skill 留下的 issue 开始。
 
+
 ## 纯链接清单 {#links}
 
 方便复制。阅读请走上面的分栏，那里有导读。
@@ -306,6 +323,8 @@ https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/overview
 https://docs.anthropic.com/en/docs/agents-and-tools/mcp
 https://docs.anthropic.com/en/docs/build-with-claude/skills-guide
+https://mariozechner.at/posts/2025-11-30-pi-coding-agent/
+https://github.com/disler/pi-vs-claude-code/blob/main/COMPARISON.md
 ```
 
 社区与产业原文。阅读走上面的第九节。
