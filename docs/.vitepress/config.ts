@@ -35,7 +35,13 @@ export default defineConfig({
       '/growth/': [
         {
           text: '自身成长',
-          items: [{ text: '概览', link: '/growth/' }],
+          items: [
+            { text: '概览', link: '/growth/' },
+            {
+              text: '2027 年最赚钱的 AI 生意',
+              link: '/growth/most-lucrative-ai-business-2027',
+            },
+          ],
         },
       ],
       '/notes/': [
