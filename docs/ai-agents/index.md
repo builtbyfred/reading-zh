@@ -1,6 +1,6 @@
 ---
 title: AI / Agent 阅读清单
-description: AI / Agent 中文导读目录。前七节链到 Anthropic，第八节是 Pi 的两篇译文，第九节是社区与产业来源的摘要。站内不转载原文全文。
+description: AI / Agent 中文导读目录。前七节链到 Anthropic，第八节是 Pi 的两篇译文，第九节是社区与产业来源。站内不转载英文原文。
 outline: [2, 2]
 ---
 
@@ -8,7 +8,7 @@ outline: [2, 2]
 
 面向希望看懂 AI、也看懂 Agent 的软件开发者。前七节来自 Anthropic 官网的 Engineering、Research、News，以及配套文档。第八节是 Pi 的作者长文和一篇社区对照，用来和 Claude Code 这条线对看。第九节是社区作者和产业工程博客的导读与摘要，和 Anthropic 官方文分开列。
 
-本站每篇是 **非官方** 中文。前七节和第八节的两篇 Pi 有导读和按原文结构写成的译文；第九节是摘要。第三方原文留在来源站点，这里不转载全文。
+本站每篇是 **非官方** 中文。前七节、第八节的两篇 Pi，以及第九节里标明译文的，有导读和按原文结构写成的译文；第九节其余是摘要。第三方原文留在来源站点，这里不转载英文全文。
 
 入口：[Engineering](https://www.anthropic.com/engineering) · [Research](https://www.anthropic.com/research) · [Docs](https://docs.anthropic.com)
 
@@ -235,7 +235,7 @@ outline: [2, 2]
 
 ## 九、社区与产业精选 {#community}
 
-这一节不是 Anthropic 官方清单。每篇是导读加摘要，原文留在作者或公司的页面上。顺序按收进本站的先后。
+这一节不是 Anthropic 官方清单。多数是导读加摘要；标明译文的是全文中文。原文留在来源页。顺序按收进本站的先后。
 
 ### 循环工程：让系统去提示 Agent
 
@@ -284,6 +284,12 @@ outline: [2, 2]
 - **本站**：[我怎么用 AI 编程 2026.08](./how-i-use-ai-coding-2026-08)（摘要）
 - **原文**：[我怎么用 AI 编程 2026.08](https://x.com/i/article/2092608649403252736)（陈成 · X Article · 2026-08-26）
 - **为什么读**：两个月的变化收成「并发」：设计一次问 n 个 Agent，审查并行跑 n 个模型，项目在 Herdr 里排开，早晨从读定时 Skill 留下的 issue 开始。
+
+### 你的编程 Agent 让你成了经理
+
+- **本站**：[你的编程 Agent 让你成了经理](./your-coding-agents-made-you-a-manager)（译文）
+- **原文**：[Your coding agents made you a manager](https://x.com/addyosmani/status/2119332146485891501)（Addy Osmani · X Article · 2026-11-08）
+- **为什么读**：管理编程 Agent 用的就是管理团队的那一套：给它能跑的检查、只写仓库里没有的上下文、把同一处纠正写进 `CLAUDE.md`、只强制不能变通的事。类比在返工几乎免费、Agent 太容易附和的地方失效。
 
 
 ## 纯链接清单 {#links}
@@ -339,4 +345,5 @@ https://x.com/i/article/2108928845969780736
 https://x.com/HiTw93/status/2067851910464565374
 https://x.com/i/article/2068328394866274305
 https://x.com/i/article/2092608649403252736
+https://x.com/addyosmani/status/2119332146485891501
 ```

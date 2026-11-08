@@ -40,7 +40,7 @@ features:
 
 ## 现在有哪些栏目
 
-- [AI / Agent](/ai-agents/)：已放入一份 Anthropic 阅读清单，25 篇都是译文。另有两篇 Pi coding agent 的译文，以及第九节社区与产业精选（摘要）。
+- [AI / Agent](/ai-agents/)：已放入一份 Anthropic 阅读清单，25 篇都是译文。另有两篇 Pi coding agent 的译文，以及第九节社区与产业精选（以摘要为主，另有一篇全文译文）。
 - [自身成长](/growth/)：习惯、注意力、写作与职业。现有一篇 Dan Koe 的译文。
 - [短摘录 / 笔记](/notes/)：给更短的卡片，不要求整篇译文。
 

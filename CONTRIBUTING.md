@@ -122,6 +122,9 @@ tags:
 | retained mode | retained mode（保留模式）。组件树跨帧保留，没变的部分可以缓存。与 immediate mode（立即模式）相对 |
 | plan mode | plan mode（计划模式）。先只读分析、再改代码的一种模式 |
 | Terminal-Bench | Terminal-Bench。在终端里做任务的 Agent 评测 |
+| orchestration tax | orchestration tax（编排税）。前几个 Agent 之后，每多开一个都比上一个更占人的注意力 |
+| cognitive surrender | cognitive surrender（认知投降）。把判断连同任务一起交出去，只收下结果 |
+| auto memory | auto memory（自动记忆）。记在本机、不会进队友会话的 Agent 笔记 |
 
 表里没有的词，选一个写法用在文里，并在 Pull Request 里补一行到这张表。
 
