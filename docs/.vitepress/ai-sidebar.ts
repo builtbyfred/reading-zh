@@ -87,6 +87,7 @@ export const aiAgentsSidebar: DefaultTheme.SidebarItem[] = [
           { text: 'HiTw93「你不知道的」系列', link: '/ai-agents/hitw93-ai-interview-series' },
           { text: '一个用寓言讲概念的提示', link: '/ai-agents/anthropic-god-prompt' },
           { text: '我怎么用 AI 编程 2026.08', link: '/ai-agents/how-i-use-ai-coding-2026-08' },
+          { text: '你的编程 Agent 让你成了经理', link: '/ai-agents/your-coding-agents-made-you-a-manager' },
         ],
       },
     ],
