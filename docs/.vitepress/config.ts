@@ -41,6 +41,10 @@ export default defineConfig({
               text: '2027 年最赚钱的 AI 生意',
               link: '/growth/most-lucrative-ai-business-2027',
             },
+            {
+              text: '如何用一名 AI 员工为你的网站做 SEO',
+              link: '/growth/seo-with-an-ai-employee',
+            },
           ],
         },
       ],
