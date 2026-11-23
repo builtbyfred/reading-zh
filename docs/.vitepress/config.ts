@@ -45,6 +45,10 @@ export default defineConfig({
               text: '如何用一名 AI 员工为你的网站做 SEO',
               link: '/growth/seo-with-an-ai-employee',
             },
+            {
+              text: '如何在 2027 年登上 Google 地图第 1 名',
+              link: '/growth/google-maps-rank-2027',
+            },
           ],
         },
       ],
